@@ -1,3 +1,21 @@
+$(document).ready(function(){
+	$('.articuloskills').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 1000,
+		dots: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+});
+
 const typed = new Typed('.typed', {
 
 	stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
