@@ -1,41 +1,3 @@
-@media (max-width:952){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-@media (max-width:858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #9356A0;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a.hover, li a.active{
-        background: none;
-        color: aqua;
-    }
-    #check:checked ~ ul{ 
-        left:0;
-    }
-}
 
 
 * {
@@ -284,7 +246,7 @@ li a.active, li a:hover{
     font-size: 30px;
     color: #FFF;
     float: right;
-
+    line-height: 50px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
@@ -293,6 +255,42 @@ li a.active, li a:hover{
 #check {
     display: none;
 }
-
+@media (max-width:952){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a.hover, li a.active{
+        background: none;
+    
+    }
+    #check:checked ~ ul{ 
+        left:0;
+    }
+}
 
     
