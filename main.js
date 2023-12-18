@@ -32,3 +32,9 @@ const typed = new Typed('.typed', {
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
 
+
+$('nav ul li a').on('click', function () {
+	// Oculta el menú al hacer clic en un enlace
+	$('#check').prop('checked', false);
+});
+
