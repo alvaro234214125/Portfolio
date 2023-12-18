@@ -118,13 +118,23 @@ li a.active, li a:hover{
 
 .articulo {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20px;
+    justify-content: space-around;
 }
 
 .articulo article {
     margin: 10px;
+}
+
+.imagen-container {
+    position: relative;
+}
+.imagen-container img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .articulo img {
@@ -133,6 +143,23 @@ li a.active, li a:hover{
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+}
+
+.texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.imagen-container:hover .texto {
+    display: none;
 }
 
 .articulo img:hover{
