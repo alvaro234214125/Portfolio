@@ -53,40 +53,88 @@ nav {
     background: #2C1B47;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    padding: 15px 50px;
     height: 80px;
     width: 100%;
     position: fixed; /* Añade esta línea para fijar el menú */
     top: 0; /* Fija el menú en la parte superior de la página */
     z-index: 1000; /* Ajusta el índice z para asegurarte de que esté por encima de otros elementos */
+    padding-bottom: 85px;
+
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .logo{
     height: 45px;
     width: 200px;
+    margin-top: 20px;
 }
     
 
 nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    display: flex;
+    margin-top: 0px;
+    border-radius: 25px;
+    
 }
 
 nav ul li{
     display: inline-block;
     padding: 10px;
     border-radius: 25px;
-    margin-left: 10px;
-}
-nav ul li:hover{
-    background-color: #9356A0;
+    margin-left: 50px;
+    margin-top: 0px;   
+     
 }
 
 nav ul li a{
     font-size: 18px;
-    padding: 7px 13px;
     color: #FFF;
     text-transform: uppercase;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    font-weight: 500px;
+}
+
+nav ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+    margin-right: 15px;
+    margin-left: 15px;
+    align-items: center;
+}
+
+nav ul li:hover a .icon{
+    transform: translateY(-20px);
+}
+
+nav ul li a .text{
+    position: absolute;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+nav ul li:hover a .text{
+    opacity: 1;
+    transform: translateY(10px);
+    transition: 1s;
 }
 
 li a:hover{
@@ -130,23 +178,31 @@ li a:hover{
     margin-left: 5px;
 }
 
-.repositorio{
-    display: block;
-    width: 60%;
-    font-weight: 10px;
-    background-color: #9356A0;
-    border-radius: 10px;
-    padding: 15px 30px;
-    margin-top: 10px;
-    color: #FFF;
-    text-decoration: none;
+.repositorio img{
+    max-width: 50px;
+    max-height: 50px;
+    align-items:center;
+    display: flex;
     text-align: center;
-    margin-left: 50px;
+    justify-content: space-between;
 }
 
-.repositorio:hover{
-    background-color: gray;
+.opciones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
+
+.repositorio img:hover{
+    transform: scale(1.2);
+}
+
+
 
 .mainfiguras {
     display: flex;
@@ -320,15 +376,19 @@ li a:hover{
     }
 
     .checkbtn {
+        margin-top: 20px;
         display: block;
+    }
+    nav ul li a .icon{
+        display: flex;
     }
 
     nav ul {
         position: fixed;
         width: 100%;
         height: auto;
-        top: 80px;
-        left: -100%;
+        top: 62px;
+        left: -200%;
         text-align: center;
         transition: all 0.5s;
         background-color: #2C1B47;
@@ -338,12 +398,12 @@ li a:hover{
 
     nav ul li {
         display: block;
-        margin: 20px 0; /* Adjust margin for better spacing */
+        margin: 10px 0; /* Adjust margin for better spacing */
         line-height: 30px;
         float: left;
         text-align: center;
         justify-content: center;
-        margin-left: 50px;
+        margin-left: 30px;
     }
 
     nav ul li a {
@@ -359,6 +419,10 @@ li a:hover{
     #check:checked ~ ul#menu {
         left: 0;
     }
+    nav ul{
+        margin: 0;
+        padding: 0;
+    }
 }
 
 /* Apply additional styles for screens up to 600px width */
@@ -369,6 +433,15 @@ li a:hover{
     }
     .head {
         margin: 80px auto; /* Adjust margin for better spacing */
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* Adjust margin for better spacing */
+        line-height: 30px;
+        float: left;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0px;
     }
 
     .mifoto img {
@@ -404,6 +477,10 @@ li a:hover{
     .checkbtn{
         margin-right: 0px;
     }
+    nav ul{
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media (max-width: 360px) {
@@ -429,6 +506,19 @@ li a:hover{
         align-items: center;
         padding: 0px;
     }
+    nav ul li a .icon{
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 0px;
+    }
+    nav ul{
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    
 }
 
     
