@@ -18,8 +18,19 @@ body {
 .head {
     text-align: center;
     font-size: 15px;
-    margin-top: 190px; /* Centrar verticalmente y ajustar el margen horizontal */
+    margin-top: 150px; /* Centrar verticalmente y ajustar el margen horizontal */
     margin-bottom: 50px;
+}
+
+.cv{
+    background-color: #9356A0;
+    color: #FFF;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.cv:hover{
+    background-color: gray;
 }
 
 .header {
@@ -64,7 +75,11 @@ nav ul{
 nav ul li{
     display: inline-block;
     padding: 10px;
-
+    border-radius: 25px;
+    margin-left: 10px;
+}
+nav ul li:hover{
+    background-color: #9356A0;
 }
 
 nav ul li a{
@@ -74,8 +89,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 
-li a.active, li a:hover{
-    color: #9356A0;
+li a:hover{
     text-decoration: overline;
     transition: .5s;
 }
@@ -116,55 +130,62 @@ li a.active, li a:hover{
     margin-left: 5px;
 }
 
-.articulo {
+.repositorio{
+    display: block;
+    width: 60%;
+    font-weight: 10px;
+    background-color: #9356A0;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin-top: 10px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.repositorio:hover{
+    background-color: gray;
+}
+
+.mainfiguras {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.articulo article {
-    margin: 10px;
-}
-
-.imagen-container {
+.container {
+    width: 300px;
+    margin: 10px 50px;
+    font-family: 'Kanit', sans-serif;
     position: relative;
-}
-.imagen-container img {
-    max-width: 350px;
+    background: #2C1B47;
     height: auto;
     border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
 }
 
-.articulo img {
-    max-width: 350px;
-    height: auto;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+.container img {
+    width: 300px;
+    height: 400px;
+    padding: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.texto h3{
+    text-align: center;
+    border-bottom: 1px solid #9356A0;
 }
 
 .texto {
-    position: absolute;
-    bottom: 0;
+    bottom: 0; /* Ajusta la posición a la parte inferior */
     left: 0;
-    right: 0;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    text-align: justify;
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    color: #FFF;
+    padding: 10px; /* Ajusta el espacio interno del texto */
 }
 
-.imagen-container:hover .texto {
-    display: none;
-}
-
-.articulo img:hover{
-    transform: scale(1.1);
-}
 
 .articuloskills {
     display: flex;
@@ -183,8 +204,6 @@ li a.active, li a:hover{
     border-radius: 10px;
 
 }
-
-
 
 #contactame {
     color: white;
