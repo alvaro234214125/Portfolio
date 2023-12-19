@@ -382,11 +382,33 @@ li a.active, li a:hover{
     .slick-dots li {
         margin: 5px 5px; /* Adjust margin for better spacing */
     }
+    .checkbtn{
+        margin-right: 0px;
+    }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .logo{
-       display: none;
+       width: 100px;   
+    }
+
+    .checkbtn{
+        margin-right: 0px;
+    }
+
+    #contactame img {
+        max-width: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        margin-right: 30px;
+    }
+    #contactame p{
+        
+        margin-right: 10px;
+        text-align: center;
+        align-items: center;
+        padding: 0px;
     }
 }
 
