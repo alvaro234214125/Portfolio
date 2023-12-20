@@ -55,7 +55,7 @@ nav {
     position: fixed; /* Añade esta línea para fijar el menú */
     top: 0; /* Fija el menú en la parte superior de la página */
     z-index: 1000; /* Ajusta el índice z para asegurarte de que esté por encima de otros elementos */
-
+    padding-top: 20px;
     display: flex;
     padding-right: 90px;
     padding-left: 40px;
