@@ -222,6 +222,12 @@ li a:hover{
     background: #2C1B47;
     height: auto;
     border-radius: 10px;
+    opacity: 100%;
+    box-shadow: 0px 0px 30px 0px #2C1B47;}
+
+.container:hover{
+    transform: scale(1.1);
+    transition: all 1s;
 }
 
 .container img {
@@ -525,4 +531,14 @@ li a:hover{
     
 }
 
-    
+@keyframes showw{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}    
+
